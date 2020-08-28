@@ -1,5 +1,4 @@
 const expect = require('chai').expect;
-//var x = 0;
 var x=0, y=0, z=0;
 
 function vitalsAreOk(bpm, spo2, respRate) {
@@ -14,23 +13,23 @@ function findAbnormality(bpm, spo2, respRate)
 {
 		if(bpm < 70)
 			x=1;
-		if(bpm > 150)
+		else if(bpm > 150)
 			x=2;
 		if(spo2 < 90)
 			y=3;
 		if( respRate < 30)
 			z=4;
-		if( respRate > 95)
+		else if( respRate > 95)
 			z=5;
 		if(x==1)
 			console.log('Abnormality : BPM  Value:' + bpm + ' Breach: Low');
-		if(x==2)
+		else if(x==2)
 			console.log('Abnormality : BPM Value:' + bpm + ' Breach: High');
 		if(y==3)
 			console.log('Abnormality : SPO2 Value:' + spo2 + ' Breach: Low');
 		if(z==4)
 			console.log('Abnormality : respRate Value:' + respRate + ' Breach: Low');
-		if(z==5)
+		else if(z==5)
 			console.log('Abnormality : respRate Value:' + respRate + ' Breach: High');
 		
 	
