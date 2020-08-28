@@ -9,7 +9,7 @@ function vitalsAreOk(bpm, spo2, respRate) {
     }
     return true;
 }
-function findAbnormality(bpm, spo2, respRate)
+/*function findAbnormality(bpm, spo2, respRate)
 {
 		if(bpm < 70)
 			x=1;
@@ -33,11 +33,11 @@ function findAbnormality(bpm, spo2, respRate)
 			console.log('Abnormality : respRate Value:' + respRate + ' Breach: High');
 		
 	
-}
+}*/
 		
 
 expect(vitalsAreOk(100, 95, 70)).to.be.true;
 expect(vitalsAreOk(50, 95, 70)).to.be.false;
 //findAbnormality(50,95,70);
-findAbnormality(156,34,22);
+//findAbnormality(156,34,22);
 console.log('checker is done');
