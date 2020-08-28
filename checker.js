@@ -3,7 +3,7 @@ var x=0, y=0, z=0;
 
 function vitalsAreOk(bpm, spo2, respRate) {
 	
-	 return (bpm < 70) ? false : (bpm > 150) ? false : (spo2 < 90) ? false : (respRate < 30) ? false : (respRate >95) ? false : true
+	 return (bpm < 70 || bpm > 150 || spo2 < 90 || respRate < 30 || respRate > 95)  ? false : true
     
 }
 /*function findAbnormality(bpm, spo2, respRate)
